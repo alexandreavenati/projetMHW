@@ -12,7 +12,9 @@
 </head>
 
 <body>
-<?php require_once('partial/index-header.php') ?>
+<?php 
+require_once('partial/index-header.php');
+?>
 
     <script src="../js/main.js"></script>
 </body>
