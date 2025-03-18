@@ -176,9 +176,6 @@ img {
 main section:nth-of-type(1) {
   position: relative;
 }
-main section:nth-of-type(1) video {
-  z-index: -1;
-}
 main section:nth-of-type(1) article {
   width: 50%;
   background: rgb(0, 0, 0);
