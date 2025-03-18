@@ -1,0 +1,33 @@
+@import '_section1.scss';
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h2,
+h3 {
+    font-family: "Goblin";
+
+
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(241, 187, 9);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5%;
+    position: relative;
+
+    &::after {
+        content: "La chasse est ouverte";
+        color: white;
+        opacity: 0.1;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(2);
+    }
+}
