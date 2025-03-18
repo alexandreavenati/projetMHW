@@ -6,5 +6,3 @@
 </article>
 
 <div><img src="../img/arkveld.png" alt="image de Arkveld"></div>
-
-</section>

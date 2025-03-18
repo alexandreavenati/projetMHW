@@ -175,9 +175,7 @@ img {
 
 main section:nth-of-type(1) {
   position: relative;
-}
-main section:nth-of-type(1) video {
-  z-index: -1;
+  height: 140vh;
 }
 main section:nth-of-type(1) article {
   width: 50%;
@@ -185,14 +183,15 @@ main section:nth-of-type(1) article {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.6106092095) 47%, rgba(0, 0, 0, 0.476155428) 60%, rgba(0, 0, 0, 0) 100%);
   position: absolute;
   right: 0;
-  top: 250%;
+  top: 20%;
   padding: 8%;
 }
 main section:nth-of-type(1) div {
   position: absolute;
-  top: -5%;
-  left: -10%;
+  top: 0%;
+  left: 0%;
   z-index: -1;
+  width: 90%;
 }
 main section:nth-of-type(1) h3,
 main section:nth-of-type(1) p {
@@ -207,6 +206,55 @@ main section:nth-of-type(1) h3 {
   padding: 18px 0px;
   margin-bottom: 5px;
 }
+main section:nth-of-type(1) h2::after {
+  content: "La chasse est ouverte";
+  color: white;
+  opacity: 0.1;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  font-size: 3rem;
+}
+
+main section:nth-of-type(2) {
+  position: relative;
+  height: 100vh;
+}
+main section:nth-of-type(2) video {
+  z-index: -1;
+}
+main section:nth-of-type(2) article {
+  width: 50%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.6106092095) 47%, rgba(0, 0, 0, 0.476155428) 60%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  padding: 8%;
+  color: white;
+}
+main section:nth-of-type(2) article p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+main section:nth-of-type(2) article h3 {
+  font-size: 1.5rem;
+  padding: 18px 0px;
+  margin-bottom: 100px;
+}
+main section:nth-of-type(2) h2::after {
+  content: "Nouvelles menaces";
+  color: white;
+  opacity: 0.1;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  font-size: 3rem;
+}
 
 .container {
   width: 90%;
@@ -219,20 +267,10 @@ h3 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: rgb(241, 187, 9);
   text-align: center;
   padding: 20px;
   margin-bottom: 5%;
   position: relative;
-}
-h2::after {
-  content: "La chasse est ouverte";
-  color: white;
-  opacity: 0.1;
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2);
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,10 @@
-main section:nth-of-type(1) {
+main section:nth-of-type(2) {
     position: relative;
-    height: 140vh;
+    height: 100vh;
+
+    video {
+        z-index: -1;
+    }
 
     article {
         width: 50%;
@@ -8,37 +12,25 @@ main section:nth-of-type(1) {
         background: linear-gradient(270deg, rgba(0, 0, 0, 0.6106092095041141) 47%, rgba(0, 0, 0, 0.4761554279915091) 60%, rgba(0, 0, 0, 0) 100%);
         position: absolute;
         right: 0;
-        top: 20%;
+        top: 50%;
         padding: 8%;
-    }
-
-    div {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        z-index: -1;
-        width: 90%;
-    }
-
-    h3,
-    p {
         color: white;
-    }
 
-    p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.2rem;
-    }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+        }
 
-    h3 {
-        font-size: 1.5rem;
-        padding: 18px 0px;
-        margin-bottom: 5px;
+        h3 {
+            font-size: 1.5rem;
+            padding: 18px 0px;
+            margin-bottom: 100px;
+        }
     }
 
     h2 {
         &::after {
-            content: "La chasse est ouverte";
+            content: "Nouvelles menaces";
             color: white;
             opacity: 0.1;
             z-index: -1;
