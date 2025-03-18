@@ -1,0 +1,126 @@
+@import '_hamb.scss';
+
+@keyframes glow {
+    from {
+        background: rgb(230, 251, 63);
+        background: radial-gradient(circle, rgba(230, 251, 63, 1) 65%, rgb(36, 168, 255) 95%, rgba(70, 211, 252, 0.9635503859747023) 100%);
+    }
+
+    50% {
+        background: rgb(198, 218, 52);
+        background: radial-gradient(circle, rgba(198, 218, 52, 1) 65%, rgba(70, 180, 252, 1) 95%, rgba(70, 211, 252, 0.9635503859747023) 100%);
+    }
+
+    to {
+        background: rgb(229, 255, 28);
+        background: radial-gradient(circle, rgba(229, 255, 28, 1) 65%, rgb(23, 162, 255) 95%, rgba(70, 211, 252, 0.9635503859747023) 100%);
+    }
+}
+
+header {
+    position: relative;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+video {
+    z-index: -1;
+}
+
+header div:nth-of-type(2) {
+    position: absolute;
+    top: 11%;
+    left: 30%;
+    width: 60%;
+}
+
+.nav-contain {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5013655120251226) 100%);
+    z-index: 5;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    opacity: 0;
+    transition: all .5s ease;
+
+    ul {
+        list-style: none;
+        display: flex;
+        width: 70%;
+
+        li {
+            margin: 0px 35px;
+            display: flex;
+            position: relative;
+            background-image: url(../img/icon.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left;
+            text-align: right;
+            width: 100%;
+
+            &::after {
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: transparent;
+                border: solid 1px white;
+                position: absolute;
+                left: 15%;
+                bottom: -20%;
+                transition: opacity 0.3s ease;
+            }
+
+            &::before {
+                content: "";
+                width: 80px;
+                height: 1px;
+                background: rgb(255, 255, 255);
+                background: linear-gradient(90deg, rgba(255, 255, 255, 1) 62%, rgba(255, 255, 255, 0.04198175852372199) 100%);
+                position: absolute;
+                left: 18%;
+                bottom: -15%;
+                transition: opacity 0.3s ease;
+            }
+        }
+
+        a {
+            color: white;
+            font-family: "Goblin";
+            text-decoration: none;
+            font-size: 1.4rem;
+            padding-top: 10%;
+            position: relative;
+            padding-left: 25%;
+
+            &::after {
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: rgb(230, 251, 63);
+                background: radial-gradient(circle, rgba(230, 251, 63, 1) 65%, rgba(70, 180, 252, 1) 95%, rgba(70, 211, 252, 0.9635503859747023) 100%);
+                position: absolute;
+                left: 18%;
+                top: 42%;
+                opacity: 0;
+                transition: opacity .3s ease;
+            }
+
+            &:hover {
+                color: rgb(241, 187, 9);
+
+                &::after {
+                    opacity: 1;
+                    animation: glow 1s infinite alternate;
+                }
+            }
+
+        }
+    }
+}
