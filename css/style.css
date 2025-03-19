@@ -394,7 +394,7 @@ main section:nth-of-type(4) video {
 main section:nth-of-type(4) article {
   width: 100%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9131302179) 26%, rgba(0, 0, 0, 0.7478641115) 60%, rgba(0, 0, 0, 0.1400209742) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9131302179) 26%, rgba(0, 0, 0, 0.7478641115) 60%, rgba(0, 0, 0, 0) 100%);
   position: absolute;
   left: 0;
   bottom: 0;
