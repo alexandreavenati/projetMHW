@@ -1,4 +1,4 @@
-main section:nth-of-type(2) {
+main section:nth-of-type(3) {
     position: relative;
     height: 140vh;
     overflow: hidden;
@@ -10,9 +10,9 @@ main section:nth-of-type(2) {
     article {
         width: 50%;
         background: rgb(0, 0, 0);
-        background: linear-gradient(270deg, rgba(0, 0, 0, 0.6106092095041141) 47%, rgba(0, 0, 0, 0.4761554279915091) 60%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.6106092095041141) 47%, rgba(0, 0, 0, 0.4761554279915091) 60%, rgba(0, 0, 0, 0) 100%);
         position: absolute;
-        right: 0;
+        left: 0;
         top: 20%;
         padding: 8%;
         color: white;
@@ -33,7 +33,7 @@ main section:nth-of-type(2) {
             background-image: url(../img/iconMenu.png);
             background-repeat: no-repeat;
             background-size: contain;
-            background-position: right;
+            background-position: 43%;
             height: 12vh;
             margin-top: 2%;
         }
@@ -41,7 +41,7 @@ main section:nth-of-type(2) {
         div h4 {
             font-family: "Goblin";
             font-size: 1.2rem;
-            text-align: right;
+            text-align: left;
             padding-right: 8%;
             padding-top: 6%;
         }
@@ -50,7 +50,7 @@ main section:nth-of-type(2) {
     h2 {
         z-index: 2;
         &::after {
-            content: "Nouvelles menaces";
+            content: "Contenu End-Game";
             color: white;
             opacity: 0.1;
             z-index: -1;
@@ -62,12 +62,12 @@ main section:nth-of-type(2) {
         }
     }
 
-    >div:nth-of-type(2) {
+    >div:nth-of-type(2){
         z-index: 0;
         position: absolute;
-        top: 5%;
-        left: -15%;
-        width: 30%;
+        top: 30%;
+        right: -45%;
+        width: 43%;
     }
 
     .animation {
@@ -77,16 +77,14 @@ main section:nth-of-type(2) {
 
     .animate {
         transition: transform .8s ease;
-        transform: rotate(0deg);
-        transform-origin: top;
     }
 
     .animate:not(.active) {
-        transform: rotate(180deg) translateX(20%);
+        transform: rotate(-180deg);
     }
 
     .animate.active {
-        transform: rotate(360deg);
-        transform: translateX(40%) scale(2);
+        transform: rotate(-360deg);
+        transform: translateX(-120%) scale(2);
     }
 }

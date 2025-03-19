@@ -6,9 +6,17 @@ hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('active'); 
 });
 
-let animation = document.querySelector('.animation');
-let animate = document.querySelector('.animate');
+let animations = document.querySelectorAll('.animation');
+let animates = document.querySelectorAll('.animate');
 
-animation.addEventListener('click', function() {
-    animate.classList.toggle('active');
+animations.forEach(function(animation) {
+    animation.addEventListener('click', function() {
+        
+        let section = animation.closest('section'); 
+        let animate = section.querySelector('.animate'); 
+
+        if (animate) {
+            animate.classList.toggle('active');
+        }
+    });
 });
