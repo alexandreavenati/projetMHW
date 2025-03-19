@@ -8,4 +8,6 @@
         <h2>Nouvelles menaces</h2>
         <?php require_once('section2.php'); ?>
     </section>
+
+    
 </main>

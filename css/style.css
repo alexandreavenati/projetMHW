@@ -23,6 +23,7 @@ body {
   background-image: url("../img/iconMenu.png");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
   z-index: 10;
 }
 .hamb ul {
@@ -220,7 +221,8 @@ main section:nth-of-type(1) h2::after {
 
 main section:nth-of-type(2) {
   position: relative;
-  height: 100vh;
+  height: 140vh;
+  overflow: hidden;
 }
 main section:nth-of-type(2) video {
   z-index: -1;
@@ -231,9 +233,10 @@ main section:nth-of-type(2) article {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.6106092095) 47%, rgba(0, 0, 0, 0.476155428) 60%, rgba(0, 0, 0, 0) 100%);
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 20%;
   padding: 8%;
   color: white;
+  z-index: 2;
 }
 main section:nth-of-type(2) article p {
   font-family: Arial, Helvetica, sans-serif;
@@ -243,6 +246,24 @@ main section:nth-of-type(2) article h3 {
   font-size: 1.5rem;
   padding: 18px 0px;
   margin-bottom: 100px;
+}
+main section:nth-of-type(2) article div {
+  background-image: url(../img/iconMenu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 12vh;
+  margin-top: 2%;
+}
+main section:nth-of-type(2) article div h4 {
+  font-family: "Goblin";
+  font-size: 1.2rem;
+  text-align: right;
+  padding-right: 8%;
+  padding-top: 6%;
+}
+main section:nth-of-type(2) h2 {
+  z-index: 2;
 }
 main section:nth-of-type(2) h2::after {
   content: "Nouvelles menaces";
@@ -254,6 +275,31 @@ main section:nth-of-type(2) h2::after {
   left: 50%;
   transform: translate(-50%, -50%) scale(2);
   font-size: 3rem;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) {
+  z-index: 0;
+  position: absolute;
+  top: 5%;
+  left: -15%;
+  width: 30%;
+}
+main section:nth-of-type(2) .animation {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main section:nth-of-type(2) .animate {
+  transition: transform 0.8s ease;
+  transform: rotate(0deg);
+  transform-origin: top;
+}
+main section:nth-of-type(2) .animate:not(.active) {
+  transform: rotate(180deg) translateX(20%);
+}
+main section:nth-of-type(2) .animate.active {
+  transform: rotate(720deg);
+  transform: translateX(40%) scale(2);
 }
 
 .container {
