@@ -1,5 +1,9 @@
 main section:nth-of-type(1) {
     position: relative;
+<<<<<<< HEAD
+=======
+    height: 140vh;
+>>>>>>> features/main-section2
 
     article {
         width: 50%;
@@ -7,15 +11,16 @@ main section:nth-of-type(1) {
         background: linear-gradient(270deg, rgba(0, 0, 0, 0.6106092095041141) 47%, rgba(0, 0, 0, 0.4761554279915091) 60%, rgba(0, 0, 0, 0) 100%);
         position: absolute;
         right: 0;
-        top: 250%;
+        top: 20%;
         padding: 8%;
     }
 
     div {
         position: absolute;
-        top: -5%;
-        left: -10%;
+        top: 0%;
+        left: 0%;
         z-index: -1;
+        width: 90%;
     }
 
     h3,
@@ -32,5 +37,19 @@ main section:nth-of-type(1) {
         font-size: 1.5rem;
         padding: 18px 0px;
         margin-bottom: 5px;
+    }
+
+    h2 {
+        &::after {
+            content: "La chasse est ouverte";
+            color: white;
+            opacity: 0.1;
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(2);
+            font-size: 3rem;
+        }
     }
 }
