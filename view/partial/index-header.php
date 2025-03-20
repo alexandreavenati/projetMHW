@@ -14,10 +14,10 @@
     <section class="nav-contain">
         <nav>
             <ul>
-                <li><a href="#chasse" class="firstLink">Chasse</a></li>
-                <li><a href="#menace" class="secondLink">Menaces</a></li>
-                <li><a href="#end-game" class="thirdLink">End-Game</a></li>
-                <li><a href="#biome" class="fourthLink">Biomes</a></li>
+                <li class="firstLi"><a href="#chasse" class="firstLink">Chasse</a></li>
+                <li class="secondLi"><a href="#menace" class="secondLink">Menaces</a></li>
+                <li class="thirdLi"><a href="#end-game" class="thirdLink">End-Game</a></li>
+                <li class="fourthLi"><a href="#biome" class="fourthLink">Biomes</a></li>
             </ul>
         </nav>
     </section>

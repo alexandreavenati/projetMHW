@@ -127,7 +127,6 @@ header div:nth-of-type(2) {
 }
 .nav-contain ul li::before {
   content: "";
-  width: 80px;
   height: 1px;
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgb(255, 255, 255) 62%, rgba(255, 255, 255, 0.0419817585) 100%);
@@ -135,6 +134,18 @@ header div:nth-of-type(2) {
   left: 18%;
   bottom: -15%;
   transition: opacity 0.3s ease;
+}
+.nav-contain ul li.firstLi::before {
+  width: 123px;
+}
+.nav-contain ul li.secondLi::before {
+  width: 145px;
+}
+.nav-contain ul li.thirdLi::before {
+  width: 165px;
+}
+.nav-contain ul li.fourthLi::before {
+  width: 120px;
 }
 .nav-contain ul a {
   color: white;
@@ -175,7 +186,7 @@ header div:nth-of-type(2) {
   left: 10%;
 }
 .nav-contain ul a.fourthLink::after {
-  left: 14%;
+  left: 19px;
 }
 
 video {

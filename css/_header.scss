@@ -79,7 +79,6 @@ header div:nth-of-type(2) {
 
             &::before {
                 content: "";
-                width: 80px;
                 height: 1px;
                 background: rgb(255, 255, 255);
                 background: linear-gradient(90deg, rgba(255, 255, 255, 1) 62%, rgba(255, 255, 255, 0.04198175852372199) 100%);
@@ -87,6 +86,30 @@ header div:nth-of-type(2) {
                 left: 18%;
                 bottom: -15%;
                 transition: opacity 0.3s ease;
+            }
+
+            &.firstLi {
+                &::before {
+                    width: 123px;
+                }
+            }
+
+            &.secondLi {
+                &::before {
+                    width: 145px;
+                }
+            }
+
+            &.thirdLi {
+                &::before {
+                    width: 165px;
+                }
+            }
+
+            &.fourthLi {
+                &::before {
+                    width: 120px;
+                }
             }
         }
 
@@ -142,7 +165,7 @@ header div:nth-of-type(2) {
 
             &.fourthLink {
                 &::after {
-                    left: 14%;
+                    left: 19px;
                 }
             }
         }
