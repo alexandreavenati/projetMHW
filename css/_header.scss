@@ -122,6 +122,29 @@ header div:nth-of-type(2) {
                 }
             }
 
+            &.firstLink {
+                &:after {
+                    left: 13%;
+                }
+            }
+
+            &.secondLink {
+                &::after {
+                    left: 11%;
+                }
+            }
+
+            &.thirdLink {
+                &::after {
+                    left: 10%;
+                }
+            }
+
+            &.fourthLink {
+                &::after {
+                    left: 14%;
+                }
+            }
         }
     }
 }

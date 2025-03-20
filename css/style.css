@@ -165,6 +165,18 @@ header div:nth-of-type(2) {
   opacity: 1;
   animation: glow 1s infinite alternate;
 }
+.nav-contain ul a.firstLink:after {
+  left: 13%;
+}
+.nav-contain ul a.secondLink::after {
+  left: 11%;
+}
+.nav-contain ul a.thirdLink::after {
+  left: 10%;
+}
+.nav-contain ul a.fourthLink::after {
+  left: 14%;
+}
 
 video {
   width: 100%;
