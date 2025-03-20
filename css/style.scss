@@ -3,6 +3,10 @@
     src: url("../font/VTCGoblinHand.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +14,7 @@
 }
 
 body {
-    background-color: black
+    background-color: black;
 }
 
 @import '_header.scss';
